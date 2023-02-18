@@ -1,0 +1,25 @@
+{
+    "manifest_version": 3,
+    "name": "Color Scheme Toggler",
+    "description": "Toggle between a dark and light theme by pressing a button on the browser bar.",
+    "version": "1.0",
+    "icons": {
+        "16": "moon16.png",
+        "32": "moon32.png",
+        "48": "moon48.png",
+        "128": "moon128.png"
+    },
+    "action": {
+        "default_icon": {
+            "16": "moon16.png",
+            "32": "moon32.png",
+            "48": "moon48.png",
+            "128": "moon128.png"
+        },
+        "default_title": "Toggle Color Scheme"
+    },
+    "permissions": ["activeTab", "scripting", "debugger"],
+    "background": {
+        "service_worker": "background.js"
+    }
+}
